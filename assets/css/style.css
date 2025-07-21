@@ -1,0 +1,422 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  background: #111;
+  color: #fff;
+}
+
+.sidebar {
+  width: 250px;
+  background: #1e1e1e;
+  padding: 40px 30px 20px 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 130px;
+  margin-bottom: 10px;
+}
+
+.profile h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin: 10px 0 0;
+  line-height: 1.3;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.social-links a {
+  color: white; /* warna ikon default */
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #0ff; /* warna saat hover */
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.nav-menu ul li {
+  margin: 12px 0;
+}
+
+.nav-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s;
+}
+
+.nav-menu ul li a:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+#main {
+  flex: 1;
+  margin-left: 250px;
+  margin-right: auto;
+  padding: 40px 30px;
+  max-width: calc(100% - 250px);
+}
+
+#home, .hero {
+  background: url('../img/coding2.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+.hero h1 {
+  font-size: 52px;
+  font-weight: 700;
+  color: #fff;
+  z-index: 1;
+  margin-bottom: 10px;
+  margin-top: -50px;
+}
+
+.typed-prefix,
+.typed {
+  font-size: 28px;
+  font-weight: 400;
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  margin-top: -10px;
+}
+
+.typed-prefix {
+  color: #fff;
+}
+
+.typed {
+  color: #00ffff;
+}
+
+#resume ul ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+#contact p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+#contact i {
+  color: rgb(249, 250, 250);
+  min-width: 20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+section h2 {
+  font-size: 28px;
+  color: #0ff;
+  border-bottom: 2px solid #0ff;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+section p,
+section li {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+#resume ul > li {
+  margin-bottom: 20px;
+}
+
+#resume ul ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+#skill ul {
+  columns: 2; /* Buat dua kolom agar tidak terlalu panjang */
+  column-gap: 40px;
+}
+
+#skill li {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+#certificates p {
+  margin-top: 10px;
+}
+
+#contact p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+#contact i {
+  color: #0ff;
+  min-width: 20px;
+  font-size: 18px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 12px;
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  background: #1e1e1e;
+  border: 1px solid #444;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 15px;
+  background-color: #0ff;
+  color: #111;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.contact-form button:hover {
+  background-color: #00cccc;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.contact-info {
+  flex: 1 1 250px;
+}
+
+.contact-form {
+  flex: 1 1 300px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 12px 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.about-grid div {
+  padding: 4px 0;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    padding: 20px;
+  }
+
+  #main {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  #skill ul {
+    columns: 1;
+  }
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 20px;
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+.certificate-img {
+  max-width: 30%;
+  height: auto;
+  border: 1px solid #444;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,255,255,0.1);
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    min-height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .profile {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .profile-img {
+    width: 100px;
+  }
+
+  .nav-menu {
+    flex: 1 1 100%;
+  }
+
+  .nav-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .nav-menu ul li {
+    margin: 0;
+  }
+
+  .nav-menu ul li a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  #main {
+    margin-left: 0;
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    margin-top: -20px;
+  }
+
+  .typed-prefix,
+  .typed {
+    font-size: 20px;
+  }
+
+  #skill ul {
+    columns: 1;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    flex: 1 1 100%;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #backToTop {
+    bottom: 15px;
+    right: 15px;
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+
+  .sidebar-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}
