@@ -13,7 +13,7 @@ body {
 .sidebar {
   width: 250px;
   background: #1e1e1e;
-  padding: 20px 20px 10px 20px;
+  padding: 20px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -61,6 +61,10 @@ body {
 
 .social-links a:hover {
   color: #0ff; /* warna saat hover */
+}
+
+.nav-menu {
+  margin-top: 30px;
 }
 
 .nav-menu ul {
