@@ -224,6 +224,10 @@ section li {
   transform: scale(1.05);
 }
 
+.zoomable {
+  cursor: zoom-in;
+}
+
 .modal {
   display: none;
   position: fixed;
