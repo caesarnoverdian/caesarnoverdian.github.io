@@ -204,9 +204,25 @@ section li {
   margin-left: 20px;
 }
 
-#certificates p {
-  margin-top: 10px;
+#certificate-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
+
+#certificate-gallery img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  transition: transform 0.3s ease;
+}
+
+#certificate-gallery img:hover {
+  transform: scale(1.05);
+}
+
 
 #contact p {
   display: flex;
