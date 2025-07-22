@@ -54,7 +54,7 @@ body {
 
 .social-links a {
   color: white; /* warna ikon default */
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   transition: color 0.3s;
 }
