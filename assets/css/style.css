@@ -33,8 +33,8 @@ body {
 
 .profile-img {
   border-radius: 50%;
-  width: 130px;
-  margin-bottom: 10px;
+  width: 100px;
+  margin-bottom: 8px;
 }
 
 .profile h2 {
@@ -66,7 +66,7 @@ body {
 .nav-menu ul {
   list-style: none;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .nav-menu ul li {
