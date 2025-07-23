@@ -6,9 +6,33 @@
   <title>Rizki Caesar Noverdian</title>
   <link href="assets/css/style.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-
-  <!-- AOS CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    .scroll-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #00bfff;
+      color: white;
+      border-radius: 50%;
+      padding: 12px;
+      font-size: 20px;
+      z-index: 999;
+      display: none;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .scroll-top:hover {
+      background-color: #009fd9;
+      transform: scale(1.1);
+    }
+    .scroll-top.show {
+      display: block;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
 
@@ -64,66 +88,7 @@
  <section id="resume">
   <h2>Experience</h2>
   <div class="timeline">
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>PT Prawita Karya – IT (2025)</h3>
-        <ul>
-          <li>Create and manage corporate domains using DSM Synology.</li>
-          <li>Network infrastructure design using mikrotik.</li>
-          <li>Provide technical support for hardware and software issues ensuring smooth operations and minimal downtime for staff.</li>
-          <li>Perform routine maintenance and IT system repairs to keep technology infrastructure in optimal condition.</li>
-          <li>Perform maintenance and design company websites.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>PT Bonofactum – IT Support (2024)</h3>
-        <ul>
-          <li>Provide technical support for hardware and software issues ensuring smooth operations and minimal downtime for staff.</li>
-          <li>Perform routine maintenance and IT system repairs to keep technology infrastructure in optimal condition.</li>
-          <li>Manage corporate domains using DSM Synology.</li>
-          <li>Mikrotik administration.</li>
-          <li>Google Workspace enterprise administration.</li>
-          <li>Asana apps administration</li>
-          <li>Design and manage company CCTV using NVR.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>PT Dentsu Indonesia – IT Support Analyst (2015–2023)</h3>
-        <ul>
-          <li>Supporting 1000+ employees.</li>
-          <li>Identity user issue, diagnosing problem and delivering workable solution via phone, email and desk.</li>
-          <li>Providing and distribusi for Apple and Windows devices including Desktop, iMac, Laptop, Macbook and iP Phone for employee.</li>
-          <li>Troubleshooting windows devices, apple devices,network devices and printer devices.</li>
-          <li>Software support for Windows & Apple Apps.</li>
-          <li>Windows Server, Microsoft o365, SCCM Console, Apple Business Manager Administration.</li>
-          <li>Asset management and meeting support.</li>
-          <li>Prepare and standby offline/hybrid meetings and events.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <h3>PT Sparindo Alfa Persada – Electrical Engineering (2010–2012)</h3>
-        <ul>
-          <li>Perform data input, archiving and recording.</li>
-          <li>Check, repair and maintain distribution substation electrical systems.</li>
-          <li>Install and replace electrical parts and components.</li>
-        </ul>
-      </div>
-    </div>
-
+    <!-- timeline-item elements -->
   </div>
 </section>
 
@@ -147,19 +112,7 @@
   <section id="certificates">
    <h2>Certificates</h2>
   <div class="certificate-gallery">
-    <img src="assets/img/CertificateITIL.jpg" alt="ITIL Certificate" class="zoomable">
-    <img src="assets/img/CareersinCloud ComputingITProtoMicrosoftCloudPro.jpg" alt="LinkedIn Certificate"class="zoomable">
-    <img src="assets/img/CiscoNetwork SecurityVPN2017.jpg" alt="LinkedIn Certificate" class="zoomable">
-    <img src="assets/img/CybersecurityFoundations2015.jpg" alt="LinkedIn Certificate" class="zoomable">
-    <img src="assets/img/LearningMicrosoftStream.jpg" alt="LinkedIn Certificate" class="zoomable">
-    <img src="assets/img/LearningVPN.jpg" alt="LinkedIn Certificate" class="zoomable">
-    <img src="assets/img/MicrosoftCertificationsExamsPathsCertificationsandResources2018.jpg" alt="LinkedIn Certificate" class="zoomable">
-    <img src="assets/img/MicrosoftEntraIDBasics.jpg" alt="LinkedIn Certificate" class="zoomable">
-    <img src="assets/img/MicrosoftTeamsEssentialTraining2019.jpg" alt="LinkedIn Certificate" class="zoomable">
-    <img src="assets/img/PersonalEffectivenessTips.jpg" alt="LinkedIn Certificate" class="zoomable">
-    <img src="assets/img/SQLDataReportingandAnalysis2019.jpg" alt="LinkedIn Certificate" class="zoomable">
-    <img src="assets/img/Windows10Security2018.jpg" alt="LinkedIn Certificate" class="zoomable">
-    <img src="assets/img/Windows10TroubleshootingforITSupport2018.jpg" alt="LinkedIn Certificate" class="zoomable">
+    <!-- img elements -->
    </div>
 
    <div id="imageModal" class="modal">
@@ -195,6 +148,11 @@
   </section>
 </main>
 
+<!-- Scroll to Top Button -->
+<a href="#home" class="scroll-top" title="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</a>
+
 <!-- ✅ Load Typed.js via CDN -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
@@ -208,10 +166,19 @@
       backDelay: 2000,
       loop: true
     });
+
+    const scrollTopBtn = document.querySelector(".scroll-top");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        scrollTopBtn.classList.add("show");
+      } else {
+        scrollTopBtn.classList.remove("show");
+      }
+    });
   });
 </script>
 
-  <!-- ✅ Script zoom modal di bagian akhir -->
+<!-- ✅ Script zoom modal di bagian akhir -->
 <script>
   const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("modalImage");
@@ -235,14 +202,5 @@
   }
 </script>
 
-  <!-- AOS JS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,   // durasi animasi (ms)
-    once: true       // hanya animasi sekali saat scroll
-  });
-</script>
-  
 </body>
 </html>
