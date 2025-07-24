@@ -335,11 +335,10 @@ section li {
 
 .about-grid {
   display: grid;
-  grid-template-columns: max-content 1fr;
-  column-gap: 14px;
-  row-gap: 10px;
-  margin-bottom: 20px;
+  grid-template-columns: 160px 1fr;
+  gap: 10px 20px;
   color: #fff;
+  padding: 0 20px;
 }
 
 .about-grid .label {
@@ -357,10 +356,10 @@ section li {
 }
 
 .about-paragraph {
-  grid-column: 2; /* ✅ pastikan dia mulai dari kolom ke-2 */
   margin: 0;
   line-height: 1.7;
   color: #fff;
+  padding: 0 20px;  /* supaya sejajar konten dalam .section-box */
 }
 
 @media (max-width: 768px) {
