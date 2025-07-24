@@ -198,7 +198,11 @@
     padding-left: 20px;
     margin-top: 10px;
   }
-  
+
+#resume h3 {
+  margin-top: 40px;
+}
+
   #skill ul {
     columns: 2; /* Buat dua kolom agar tidak terlalu panjang */
     column-gap: 40px;
