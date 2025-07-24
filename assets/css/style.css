@@ -335,8 +335,9 @@
   
 .about-grid {
   display: grid;
-  grid-template-columns: 170px 1fr;
+  grid-template-columns: max-content 1fr;
   gap: 10px 20px;
+  margin-bottom: 20px;
   color: #fff;
 }
 
@@ -347,18 +348,17 @@
   position: relative;
   padding-right: 10px;
 }
-  
- .about-grid .label::after {
+
+.about-grid .label::after {
   content: ":";
   position: absolute;
   right: 0;
 }
   
 .about-paragraph {
-  margin-top: 20px;
-  color: #fff;
+  margin: 0;
   line-height: 1.7;
-  padding-left: 170px; /* sejajar kolom value */
+  color: #fff;
 }
   
   @media (max-width: 768px) {
@@ -499,7 +499,7 @@
   .section-box {
     background-color: #1f1f1f;
     border-radius: 12px;
-    padding: 40px;
+    padding: 20px 40px;
     margin-top: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
