@@ -334,9 +334,17 @@ section li {
   gap: 12px 20px;
   color: #fff;
   margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
 }
+
 .about-grid div {
   padding: 4px 0;
+}
+
+.about-grid strong {
+  color: #00bfff;
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
