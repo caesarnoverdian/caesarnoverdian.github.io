@@ -199,8 +199,8 @@
     margin-top: 10px;
   }
 
-#resume h3 {
-  margin-top: 40px;
+#resume .timeline-item + .timeline-item {
+  margin-top: 30px;
 }
 
   #skill ul {
