@@ -330,7 +330,7 @@ section li {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 160px 1fr;
+  grid-template-columns: 120px 1fr;
   gap: 12px 20px;
   color: #fff;
   margin-bottom: 20px;
