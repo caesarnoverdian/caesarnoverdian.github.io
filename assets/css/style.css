@@ -477,3 +477,40 @@ section li {
     font-size: 14px;
   }
 }
+
+.section-box {
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  row-gap: 8px;
+  column-gap: 12px;
+  margin-bottom: 16px;
+}
+
+.section-box ul {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.certificate-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+.certificate-gallery img {
+  width: 180px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+.certificate-gallery img:hover {
+  transform: scale(1.05);
+}
