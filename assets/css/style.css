@@ -486,6 +486,70 @@ section li {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1 1 250px;
+  font-size: 16px;
+  color: #ccc;
+}
+.contact-info p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+.contact-info i {
+  margin-right: 10px;
+  color: #00bfff;
+}
+
+.contact-form {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fff;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 15px;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #00bfff;
+}
+
+.contact-form button {
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+  background-color: #009fd9;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
