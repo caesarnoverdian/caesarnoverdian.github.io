@@ -336,9 +336,9 @@
 .about-grid {
   display: grid;
   grid-template-columns: 160px 1fr;
-  gap: 10px 24px;  /* dari 20px jadi 24px */
+  gap: 10px 24px;
   color: #fff;
-  padding: 0 20px;
+  padding: 0;
 }
 
   .about-grid .label {
@@ -356,8 +356,8 @@
   }
   
 .about-paragraph {
-  margin: 0;
-  margin-left: 184px; /* sejajarkan dengan kolom 2 dari .about-grid */
+  grid-column: 1 / -1; /* Supaya full width dalam grid */
+  padding-left: 160px;  /* Sesuai kolom pertama */
   line-height: 1.7;
   color: #fff;
 }
