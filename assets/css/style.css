@@ -342,11 +342,6 @@ section li {
   padding: 4px 0;
 }
 
-.about-grid strong {
-  color: #00bfff;
-  font-weight: 600;
-}
-
 @media (max-width: 768px) {
   body {
     flex-direction: column;
