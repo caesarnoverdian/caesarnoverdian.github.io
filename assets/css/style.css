@@ -333,15 +333,14 @@
     padding-right: 20px;
   }
   
-  .about-grid {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    column-gap: 16px;
-    row-gap: 10px;
-    align-items: start;
-    padding: 0 20px;
-  }
-  
+.about-grid {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 10px 24px;  /* dari 20px jadi 24px */
+  color: #fff;
+  padding: 0 20px;
+}
+
   .about-grid .label {
     text-align: right;
     font-weight: 600;
@@ -356,12 +355,12 @@
     right: 0;
   }
   
-  .about-paragraph {
-    margin: 0;
-    line-height: 1.7;
-    color: #fff;
-    padding: 0 20px;  /* supaya sejajar konten dalam .section-box */
-  }
+.about-paragraph {
+  margin: 0;
+  margin-left: 184px; /* sejajarkan dengan kolom 2 dari .about-grid */
+  line-height: 1.7;
+  color: #fff;
+}
   
   @media (max-width: 768px) {
     body {
