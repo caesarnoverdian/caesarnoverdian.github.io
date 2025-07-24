@@ -328,6 +328,11 @@ section li {
   flex: 1 1 300px;
 }
 
+.content-align {
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: max-content 1fr;
