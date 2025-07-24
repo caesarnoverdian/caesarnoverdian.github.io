@@ -335,19 +335,16 @@
   
 .about-grid {
   display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 10px 24px;
-  color: #fff;
-  padding: 0;
+  grid-template-columns: max-content 1fr;
+  column-gap: 20px; /* disamakan dengan ruang di timeline */
+  align-items: start;
+  margin-bottom: 16px;
 }
 
-  .about-grid .label {
-    text-align: right;
-    font-weight: 600;
-    white-space: nowrap;
-    position: relative;
-    padding-right: 10px;
-  }
+.about-grid .label {
+  text-align: right;
+  font-weight: 600;
+}
   
   .about-grid .label::after {
     content: ":";
@@ -356,10 +353,7 @@
   }
   
 .about-paragraph {
-  grid-column: 1 / -1; /* Supaya full width dalam grid */
-  padding-left: 160px;  /* Sesuai kolom pertama */
-  line-height: 1.7;
-  color: #fff;
+  grid-column: 2;
 }
   
   @media (max-width: 768px) {
