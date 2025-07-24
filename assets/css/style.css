@@ -357,7 +357,8 @@ section li {
 }
 
 .about-paragraph {
-  margin-left: calc(14px + 100px); /* 14px = column gap, 100px = kira-kira lebar max-content */
+  grid-column: 2; /* ✅ pastikan dia mulai dari kolom ke-2 */
+  margin: 0;
   line-height: 1.7;
   color: #fff;
 }
