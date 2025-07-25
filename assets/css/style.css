@@ -269,27 +269,28 @@
     z-index: 1000;
   }
   
-  #contact p {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 16px;
-    margin: 8px 0;
-  }
-  
-  #contact i {
-    color: #0ff;
-    min-width: 20px;
-    font-size: 18px;
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    gap: 12px;
-    max-width: 500px;
-  }
+ #contact p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;         /* Ukuran teks diperbesar */
+  margin: 10px 0;
+  color: #fff;             /* Pastikan warnanya kontras di dark mode */
+}
+
+#contact i {
+  color: #00bfff;          /* Aksen biru terang */
+  min-width: 24px;
+  font-size: 22px;         /* Ukuran ikon diperbesar */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 14px;
+  max-width: 500px;
+}
   
   .contact-form input,
   .contact-form textarea {
