@@ -273,15 +273,20 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  font-size: 18px;         /* Ukuran teks diperbesar */
+  font-size: 18px;        
   margin: 10px 0;
-  color: #fff;             /* Pastikan warnanya kontras di dark mode */
+  color: #fff;            
 }
 
 #contact i {
-  color: #00bfff;          /* Aksen biru terang */
+  color: #fff;             
   min-width: 24px;
-  font-size: 22px;         /* Ukuran ikon diperbesar */
+  font-size: 22px;
+  transition: color 0.3s;    
+}
+
+#contact p:hover i {
+  color: #00bfff;            /* Saat kursor menyentuh: biru terang */
 }
 
 .contact-form {
